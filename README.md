@@ -41,6 +41,8 @@ npm install
 # Start the development server
 npm run dev
 
+```
+
 ### API Used:
 
 const API_BASE_URL = "https://api.themoviedb.org/3";
@@ -54,7 +56,6 @@ Get your Firebase config from Project Settings
 
 Add the config to your project in .env file:
 
- ```bash
 VITE_TMDB_API_KEY = yours
 
 VITE_APPWRITE_PROJECT_ID = yours
