@@ -44,17 +44,21 @@ npm run dev
 ```
 
 ### API Used:
-
+```bash
 const API_BASE_URL = "https://api.themoviedb.org/3";
+```
 
-🔐 Firebase Setup
+## 🔐 Firebase Setup
+### Steps:
 Go to Firebase Console
 
 Create a new project and enable Firestore/Realtime Database
 
 Get your Firebase config from Project Settings
 
-Add the config to your project in .env file:
+### Add the config to your project in .env file:
+```bash
+.env
 
 VITE_TMDB_API_KEY = yours
 
@@ -63,14 +67,14 @@ VITE_APPWRITE_PROJECT_ID = yours
 VITE_APPWRITE_DATABASE_ID = yours
 
 VITE_APPWRITE_COLLECTION_ID = yours
+``` 
 
-Import to "App.jsx" using:
+Import to "App.jsx" using for all:
+```bash
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY; 
+```
 
-const API_KEY = import.meta.env.VITE_TMDB_API_KEY; for all
-
-
-
-📌 Future Enhancements
+## Future Enhancements:
 🔎 Search functionality
 
 🎯 Genre-based filtering
@@ -79,7 +83,7 @@ const API_KEY = import.meta.env.VITE_TMDB_API_KEY; for all
 
 🗂 Sorting by rating, year, etc.
 
-🤝 Contributing
+## Contributing
 Contributions are welcome! Fork the repo and submit a pull request.
 
-Built with 🎬 by movie lovers, for movie lovers.
+### Built with 🎬 by movie lovers, for movie lovers.
